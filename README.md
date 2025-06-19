@@ -5,16 +5,18 @@ DSA Guru is a web-based application designed to help users learn, practice, and 
 ## 🚀 Features
 
 - 📚 **Theory & Explanations:** Clear explanations of common data structures and algorithms.
-- 🛠️ **Interactive Practice:** Hands-on coding challenges to test and improve your skills.
 - 👨‍💻 **Live Code Execution:** Run and test code snippets directly in the browser.
-- 💡 **Tips & Tricks:** Pro tips for interviews and competitive programming.
 - 🤝 **User-Friendly Interface:** Simple, clean, and responsive design for seamless learning.
+- 🧩 Step-by-step Explanations
+- 💡 Instant Doubt Solving
+- 🌱 Personalized learning experience
 - 🗣 Voice Messaging for hands-free learning
 - 📚 Chat History
 - ✨ Animated Preloader to set the learning vibe
 - 🧹 Easy history clearing with one click
 - 🛠 One-click Code Debugger
-
+- 🌙 Light/Dark Mode for comfort
+- 🎨 Modern, distraction-free UI
 
 
 ## 🌐 Demo
