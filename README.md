@@ -22,10 +22,13 @@ DSA Guru is a web-based application designed to help users learn, practice, and 
 Check out the live demo: [DSA Guru Live] (https://dsa-guru12.netlify.app/)
 
 ## 🖼️ Screenshots
+<img src="SS1.jpeg" width="700">
+<img src="SS2.jpeg" width="700">
+<img src="SS3.jpeg" width="700">
+<img src="SS4.jpeg" width="700">
+<img src="SS5.jpeg" width="700">
+<img src="SS6.jpeg" width="700">
 
-<!--
-![Screenshot 1](screenshots/screenshot1.png)
--->
 
 ## 🛠️ Technologies Used
 
