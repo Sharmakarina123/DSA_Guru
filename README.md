@@ -32,11 +32,12 @@ Check out the live demo: [DSA Guru Live] (https://dsa-guru12.netlify.app/)
 <img src="SS6.jpeg" width="700">
 
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- HTML, CSS, JavaScript
-- [Google Gemini API]
-- [Netlify](https://www.netlify.com/) *(for deployment)*
+- **Frontend:** HTML, CSS, JavaScript
+- **AI Integration:** Google Gemini API
+- **Voice Messaging:** Web Speech API (*SpeechRecognition* for speech-to-text, *SpeechSynthesis* for text-to-speech)
+- **Deployment:** Netlify
 
 
 ## 📄 License
