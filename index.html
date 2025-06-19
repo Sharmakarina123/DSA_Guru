@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DSA Mentor - AI Learning Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/1K7sW94/avatar-mentor.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-title">
+          <span class="preloader-myname">DSA Guru</span>
+          <span class="preloader-heart">made with <span style="color:#e11d48;font-size:1.2em;">&#10084;&#65039;</span> by Karina Sharma</span>
+          <span class="preloader-slogan">DSA Guru: Learn, Debug, Succeed!</span>
+        </div>
+        <div class="preloader-algos">
+          <span class="algo">Sorting</span>
+          <span class="algo">Linked List</span>
+          <span class="algo">Algorithms</span>
+          <span class="algo">Binary Search</span>
+          <span class="algo">Arrays</span>
+          <span class="algo">Dynamic Programming</span>
+        </div>
+        <div class="preloader-spinner"></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Decorative Floating Premium Badge -->
+    <div class="floating-premium-badge" id="floating-premium">
+        <i class="fas fa-crown"></i> <span>Premium</span>
+    </div>
+
+    <!-- Chat history sidebar -->
+    <div id="chat-history">
+        <div class="history-header">
+            <h3>Chat History</h3>
+            <button class="close-history" id="close-history">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="history-list"></div>
+        <button id="new-chat-btn">
+            <i class="fas fa-plus"></i> New Chat
+        </button>
+        <button id="clear-history-btn">
+            <i class="fas fa-trash-alt"></i> Clear All History
+        </button>
+    </div>
+
+    <div id="chat-container">
+        <header id="chat-header">
+            <button id="history-btn" class="tool-button" title="Chat History">
+                <i class="fas fa-history"></i>
+            </button>
+            <a href="#" target="_blank" class="profile-link" onclick="event.preventDefault();">
+                <div id="header-title">
+                    <h1>DSA Guru <span style="font-size:1.2em;">🤖</span></h1>
+                    <p>By Karina Sharma</p>
+                </div>
+            </a>
+            <button id="new-chat-header-btn" class="tool-button" title="New Chat">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button id="features-btn" class="tool-button premium-btn" title="Premium Features">
+                <i class="fas fa-crown"></i>
+            </button>
+            <div class="mode-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" />
+                <label class="theme-toggle-label" for="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <span class="theme-toggle-slider"></span>
+                </label>
+            </div>
+            <div class="switch-container">
+                <span class="switch-text">Code Debugger</span>
+                <label class="switch">
+                    <input type="checkbox" id="mentor-mode">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+        <div class="feature-badge gradient-glow">PREMIUM AI MENTOR</div>
+        <div id="chat-box"></div>
+        <div id="input-area">
+            <div class="voice-message-ui" id="voice-ui">
+                <span>Recording...</span>
+                <div class="waveform">
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                </div>
+                <button id="cancel-voice" title="Cancel Recording">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="input-form">
+                <button type="button" id="voice-button" class="chat-button" title="Voice Message">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <input type="text" id="message-input" placeholder="Ask about algorithms, data structures, complexity..." autocomplete="off" required>
+                <button id="send-button" class="chat-button" type="submit" title="Send Message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Feature tour popup -->
+    <div class="overlay" id="overlay"></div>
+    <div class="feature-tour" id="feature-tour">
+        <div class="feature-tour-header">
+            <span class="feature-tour-emoji">🚀</span>
+            <h3>Premium & Features</h3>
+        </div>
+        <div class="feature-tour-list">
+            <div class="feature-tour-item"><span class="feature-emoji">🔍</span> <b>Code Debugger</b><span class="feature-desc"> — Instantly find & fix bugs.</span></div>
+            <div class="feature-tour-item"><span class="feature-emoji">📚</span> <b>History</b><span class="feature-desc"> — Stores Chat History </span></div>
+            <div class="feature-tour-item"><span class="feature-emoji">🗣️</span> <b>Voice Input</b><span class="feature-desc"> — Talk instead of typing.</span></div>
+            <div class="feature-tour-item"><span class="feature-emoji">⚡️</span> <b>Code Optimization</b><span class="feature-desc"> — Get smart performance tips.</span></div>
+            <div class="feature-tour-item"><span class="feature-emoji">🧩</span> <b>Stepwise Explanations</b><span class="feature-desc"> — Learn with clear breakdowns.</span></div>
+            <div class="feature-tour-item"><span class="feature-emoji">💡</span> <b>Instant Doubt Solving</b><span class="feature-desc"> — Clear up even tricky DSA topics.</span></div>
+            <div class="feature-tour-item"><span class="feature-emoji">🌱</span> <b>Personalized Mentor</b><span class="feature-desc"> — Learn at your pace, your way.</span></div>
+        </div>
+        <button id="close-tour">Got It!</button>
+    </div>
+
+    <!-- Delete confirmation popup -->
+    <div class="confirmation-modal" id="delete-confirm">
+        <div class="modal-content">
+            <h3>Delete Chat</h3>
+            <p>Are you sure you want to delete this chat? This action cannot be undone.</p>
+            <div class="modal-buttons">
+                <button id="confirm-delete">Yes, Delete</button>
+                <button id="cancel-delete">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit chat title popup -->
+    <div class="confirmation-modal" id="edit-title-modal">
+        <div class="modal-content">
+            <h3>Edit Chat Title</h3>
+            <input type="text" id="new-chat-title" placeholder="Enter new chat title" maxlength="50">
+            <div class="modal-buttons">
+                <button id="save-title">Save</button>
+                <button id="cancel-edit">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
