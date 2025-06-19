@@ -40,9 +40,9 @@ Check out the live demo: [DSA Guru Live] (https://dsa-guru12.netlify.app/)
 - **Deployment:** Netlify
 
 
-## 📄 License
+## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](./LICENSE).
 
 ## 🙌 Acknowledgements
 
